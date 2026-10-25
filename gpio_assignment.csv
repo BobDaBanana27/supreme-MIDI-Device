@@ -1,0 +1,12 @@
+Signal,GPIO,Direction,Function,Electrical plan,Status
+ROW0,GP0,Output,Matrix row 0,Select one row at a time; inactive rows high impedance or inactive,Assigned
+ROW1,GP1,Output,Matrix row 1,Select one row at a time; inactive rows high impedance or inactive,Assigned
+ROW2,GP2,Output,Matrix row 2,Select one row at a time; inactive rows high impedance or inactive,Assigned
+ROW3,GP3,Output,Matrix row 3,Select one row at a time; inactive rows high impedance or inactive,Assigned
+ROW4,GP4,Output,Matrix row 4,Select one row at a time; inactive rows high impedance or inactive,Assigned
+COL0-COL9,GP5-GP14,Input,Ten key-contact columns,Use pull-ups; map individual positions in hardware/key_matrix_map.csv,Assigned
+OCT_DOWN,GP17,Input,Octave down button,Active-low button input with firmware pull-up,Assigned
+OCT_UP,GP18,Input,Octave up button,Active-low button input with firmware pull-up,Assigned
+MODE,GP19,Input,Mode/function button,Active-low button input with firmware pull-up,Assigned
+RGB_LED,GP16,Reserved,Module onboard WS2812 status LED,Do not allocate to matrix,Reserved by module
+USB_D+/USB_D-,Module native USB,USB device,USB MIDI transport,Handled by module and RP2040 USB peripheral,Module interface

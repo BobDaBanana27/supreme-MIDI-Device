@@ -1,0 +1,3 @@
+Option,USB MIDI,Wireless MIDI,USB connector,Extra power design,Touch strip option,Revision A fit,Decision and evidence
+Waveshare RP2040-Zero,Native USB device peripheral; requires USB MIDI firmware,No Bluetooth,USB-C onboard,USB bus power; onboard 3.3 V regulation,Not selected,Best fit for wired cost-first prototype,Selected; public listing and board docs linked in RESEARCH.md
+ESP32-S3 module,USB OTG capability; firmware required,BLE capable,Depends on module/board choice,Radio and battery design needed for wireless target,Capacitive GPIO supported but needs validation,More scope and cost for Revision A,Deferred; ESP32-S3 docs and limits linked in RESEARCH.md

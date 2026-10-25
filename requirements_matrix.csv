@@ -1,0 +1,10 @@
+ID,Requirement,Revision A target,Acceptance evidence,Status
+R-01,Physical note keys,25 keys covering MIDI notes 48 through 72,Every key maps to its assigned MIDI note,Defined; prototype pending
+R-02,Computer connection,USB-C wired connection using native USB MIDI,Host enumerates a USB MIDI input and DAW receives notes,Firmware and prototype pending
+R-03,Key dynamics,Two sequential contacts per key for time-based velocity estimate,Contact order and timing repeat consistently across keys,Mechanism concept only
+R-04,Key scanning,Five rows by ten columns with one isolation diode per contact,All 50 contact positions scan without ghosting,Electrical design pending validation
+R-05,Navigation controls,Octave down, octave up, and mode/function,Controls produce defined behavior in the MIDI host,Firmware pending
+R-06,Parts budget,Parts-only estimate at or below US$30,Replace placeholders with supplier/fabrication quotes and recalculate,Planning estimate US$28.79
+R-07,Enclosure envelope,320 × 120 × 18 mm target,Measure assembled physical prototype,Concept only
+R-08,Power,USB bus powered; no battery in Revision A,Measure host current across idle and active use,Prototype pending
+R-09,Wireless option,BLE MIDI, battery, and touch strip deferred to later revision,No Revision A requirement; validate independently before inclusion,Deferred

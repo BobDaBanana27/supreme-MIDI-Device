@@ -1,24 +1,64 @@
 # MetroKey 25
 
-MetroKey 25 is a design-stage concept for a compact, 25-key USB MIDI controller intended to connect to a computer and play instruments in a DAW. Its target is a parts-only build below US$30. The current work focuses on the keybed, mechanical action, enclosure, component placement, and KiCad handoff.
+MetroKey 25 is a compact two-octave USB MIDI keyboard designed around a clear constraint: a physical 25-key controller that can connect to a computer and play MIDI instruments in a DAW, with a parts-only DIY build target below US$30. The first revision uses a USB-C RP2040 module, a 25-key dual-contact switch bed for velocity, octave controls, and a mode button. Wireless, battery, and touch-strip features are documented as later options so the first build stays buildable and budget-aware.
 
-## Downloads
+## Concept views
 
-- [Complete project source and design files](MetroKey25_Project_Source.zip) — FreeCAD models, KiCad project, drawings, BOMs, research, and chunk-by-chunk design progress. Extract the archive to browse the `MetroKey25/` project folder.
-- [Keycap STL exports](MetroKey25_Keycap_Exports.zip) — separate 15-white-key and 10-black-key meshes, the combined 25-key layout, and mesh validation notes.
+These original drawings show the proposed layout and assembly. They are design illustrations, not photographs of a fabricated prototype.
 
-The combined keycap STL lifts the black-key shells by 0.2 mm above the white-key tops to avoid coincident mesh faces. The separate white and black STL files retain the individual key positions from the FreeCAD integration model.
+![MetroKey 25 top-view concept](assets/top_view_concept.svg)
 
-## Current design scope
+![MetroKey 25 exploded concept](assets/exploded_concept.svg)
 
-- 25-note C3–C5 piano layout with rearward black keys.
-- Modeled dual-contact key action and a 5-row × 10-column switch map for velocity-sensing development.
-- USB-C and RP2040-Zero placement represented in the mechanical assembly.
-- FreeCAD 1.1 project files, STEP/STL exports, dimensioned drawings, BOM, and design notes.
-- Editable KiCad schematic starter and board outline for continued electrical design.
+The current cumulative FreeCAD model is shown below; use the [CAD progress chunks](chunks/INDEX.md) to see the design evolve file by file.
 
-The mechanical action and electrical design are not yet validated as a working MIDI controller. The PCB outline is a starter, not a routed design; firmware and hardware prototyping remain future work. The cost target is an estimate rather than a production quote.
+![MetroKey 25 FreeCAD assembly drawing](hardware/CAD/MetroKey25/drawings/Assembly_Drawing.svg)
+The corrected keybed detail and the shared KiCad/FreeCAD coordinate frame are shown below.
 
-## Showcase files
+![Dimensioned keybed with black keys toward the rear controls](hardware/CAD/MetroKey25/drawings/Dimensioned_Keybed.svg)
 
-After extracting the source archive, open the `MetroKey25/` folder. Start with `README.md` and `chunks/INDEX.md`. Open `hardware/CAD/MetroKey25/MetroKey25_Assembly.FCStd` in FreeCAD or `chunks/work_packages/CHUNK_10/KiCad_Project/MetroKey25.kicad_pro` in KiCad. SVG previews and drawings can be viewed in a web browser.
+![Shared KiCad and FreeCAD mechanical envelope](hardware/CAD/MetroKey25/drawings/KiCad_FreeCAD_Envelope.svg)
+
+The black-key placement was checked against this real 25-key controller layout: [OMNITRONIC KEY-25 MIDI Controller](https://www.steinigke.de/en/mpn11045074-omnitronic-key-25-midi-controller.html).
+
+## Start here
+
+- [Design scope and decisions](DECISIONS.md)
+- [Research and platform trade study](RESEARCH.md)
+- [Estimated parts list](BOM.csv)
+- [Mechanical design](MECHANICAL_DESIGN.md)
+- [Electrical design and schematic](ELECTRICAL_DESIGN.md)
+- [Keybed and velocity matrix](KEYBED_AND_MATRIX.md)
+- [USB MIDI and DAW target](USB_MIDI.md)
+- [Controls and status behavior](CONTROLS.md)
+- [Power and later wireless options](POWER_AND_BUDGET.md)
+- [Verification plan](TEST_PLAN.md)
+- [10 substantial hardware-design packages with CAD files and previews](chunks/INDEX.md)
+- [KiCad and FreeCAD project entrypoints](hardware/PROJECT_INDEX.md)
+- [FreeCAD assembly and exports](hardware/CAD/MetroKey25/README.md)
+- [Work log and artifact index](WORK_LOG.md)
+
+## What the first revision includes
+
+- 25 note keys, mapped from MIDI note 48 through 72 (C3 to C5).
+- Two sequential switch contacts per key; the interval between contacts is the proposed velocity input.
+- A five-row by ten-column scan matrix with one isolation diode per contact.
+- An RP2040-Zero module with USB-C and native USB device support.
+- Three controls: octave down, octave up, and mode/function.
+- USB bus power and a parts-only build estimate of US$28.79.
+
+The USB-MIDI device behavior still needs firmware, and the tactile-switch velocity mechanism needs a physical calibration prototype. This repository contains the hardware design pack, not firmware or a finished device. The current cost target excludes labor, tools, taxes, shipping, and commercial margin; it is not a US$30 retail-price claim.
+
+## Schematic and visual design
+
+- [Electrical schematic drawing](hardware/MetroKey25_Electrical_Schematic.svg)
+- [Editable KiCad project and native schematic](hardware/KiCad/MetroKey25/README.md)
+- [Logisim key-scan demonstration](hardware/MetroKey25_Keyscan_Demo.circ)
+- [System architecture drawing](assets/system_architecture.svg)
+- [Key-to-matrix assignment](hardware/key_matrix_map.csv)
+
+## Progress evidence
+
+The 10 larger work packages show cumulative FreeCAD work on the enclosure, 25-key mechanism, switch placement, controller module, manufacturing exports, and drawings. Read the [stage-by-stage progression](chunks/PROGRESSION.md) for the exact additions and files. They include editable CAD snapshots and distinct visual previews. No elapsed hours or physical build photos are claimed; photograph the actual PCB, keys, or assembly when a hardware prototype exists.
+
+
