@@ -1,0 +1,14 @@
+Item,Qty used,Purchase lot,USD lot price,USD allocated to one build,Source / status
+Waveshare RP2040-Zero without headers,1,1 module,3.99,3.99,https://www.waveshare.com/RP2040-Zero.htm
+GCT SWT0310-043016GSA tactile switch,53,50+ price tier each at 0.1316,6.97,6.97,https://www.digikey.com/en/products/detail/gct/SWT0310-043016GSA/28022317; candidate; mechanical fit unverified
+SMC 1N4148 DO-35 diode,50,50-piece tier each at 0.0584,2.92,2.92,https://www.digikey.com/en/products/detail/smc-diode-solutions/1N4148/6022448
+304 stainless compression spring 0.5x6x10 mm,25,50 pieces,7.94,3.97,https://www.harfington.com/products/p-1975220; force and fit unverified
+M2 x 3 mm pan head screws,4,100 pieces,4.57,0.18,https://homediyer.com/products/m2-phillips-pan-head-machine-screws-3-5-5mm-carbon-stainless; case fit to verify
+Black PLA 1.75 mm,Not measured,1 kg spool,22.99,Not measured,https://www.hatchbox3d.com/collections/all-filaments/products/3d-pla-1kg1-75-blk
+White PLA 1.75 mm,Not measured,1 kg spool,28.00,Not measured,https://www.hatchbox3d.com/collections/all-filaments/products/3d-pla-1kg1-75-wht
+Two-layer key-scan PCB 304x69 mm,1,Quote needed,,,Outline-only board; no routed copper or fabrication Gerbers
+USB-A to USB-C data cable,1 optional,2-pack,9.99,5.00,https://www.anker.com/products/b8173?Sort_by=Recommended&collections_usb-a-to-usb-c-cable=&variant=43756200591510; no cost if already owned
+Solder wire and assembly consumables,TBD,TBD,,,Not yet specified or sourced
+One-build sourced allocation subtotal,,,,18.04,Excludes PCB printed material solder wire shipping taxes and labor; see BOM.md
+One-off electronics and hardware checkout,,,,26.39,Includes full spring and screw packs; see BOM.md
+Full stock checkout including black and white filament,,,,77.38,Includes full 1 kg spools; not one-build material consumption; excludes PCB shipping and tax
