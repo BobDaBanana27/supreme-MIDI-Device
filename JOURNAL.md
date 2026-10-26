@@ -6,11 +6,11 @@
 > [!NOTE]
 > This devlog is mirrored from [Half Life](https://halflife.hackclub.com) – [open the project](https://halflife.hackclub.com/projects/cmvn4hqb504rn01noc6174jcn). Editing it here will not change the platform's copy, and the next sync overwrites this file.
 
-> A MIDI Keyboard TBD.
+> MetroKey 25 is a compact 25-key MIDI controller prototype. Its current design combines a 3D-printed keybed, 53 switch contacts, and an RP2040-Zero for wired USB-MIDI with desktop software such as FL Studio.
 
 | Week | Tier | Hours logged | Entries |
 | --- | --- | --- | --- |
-| Week 3 | Tier 1 | 11h | 1 |
+| Week 3 | Tier 1 | 12h | 1 |
 
 ## Contents
 
@@ -20,7 +20,7 @@
 
 ### 2026-10-25 – In the first hour I started to build the base with a 320 × 120 × 18 mm shell floor and perimeter, with a centred rear USB-C opening, full key-window bezel, and bored three-button rear deck. This group
 
-**11h**
+**12h**
 
 In the first hour I started to build the base with a 320 × 120 × 18 mm shell floor and perimeter, with a centred rear USB-C opening, full key-window bezel, and bored three-button rear deck. This groups the related enclosure geometry that was previously split across several tiny steps.
 
@@ -57,3 +57,7 @@ By hour 10, I made the Black Keys and white Keys keycaps' STL's:
 ![image](https://halflife.hackclub-assets.com/sessions/fpT4vKaaCxCaCu9yi3OynxGXkAPlXNzI/4382e5f8c6fb2e560d190c65347aaa7ebbb813757e308494dd47e767bb9f5985.png)
 
 By hour 11, I finished the remaining small details, like the README and the final BOM file (which will be in the GitHub repo).
+
+Lastly, in hour 12, Made A fancy design model, which is the cover art
+
+![image](https://halflife.hackclub-assets.com/sessions/fpT4vKaaCxCaCu9yi3OynxGXkAPlXNzI/b1ee67df14ca8feb97e2b983017cce12db75742f522c63d12f9357d1cb6a4c7c.png)
