@@ -26,6 +26,10 @@ MetroKey 25 is a compact two-octave USB MIDI keyboard designed around a clear co
 - Three controls: octave down, octave up, and mode/function.
 - USB bus power and a parts-only build estimate of US$28.79.
 
+<img width="1150" height="364" alt="Screenshot 2026-10-25 170304" src="https://github.com/user-attachments/assets/33f0234c-794e-465e-81bb-76220681faca" />
+<img width="1077" height="582" alt="Screenshot 2026-10-25 171423" src="https://github.com/user-attachments/assets/e964c717-4eb9-4ae9-8a60-5fa336db220b" />
+
+
 The USB-MIDI device behavior still needs firmware, and the tactile-switch velocity mechanism needs a physical calibration prototype. This repository contains the hardware design pack, not firmware or a finished device. The current cost target excludes labor, tools, taxes, shipping, and commercial margin; it is not a US$30 retail-price claim.
 
 ## Schematic and visual design
